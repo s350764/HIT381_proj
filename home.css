@@ -1,0 +1,131 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.content-box {
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    color: #007bff;
+}
+
+.features h2 {
+    color: #28a745;
+}
+
+.cta-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.content-box.calendar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.content-box.calendar h2 {
+    color: #dc3545; /* Change color as needed */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle input {
+    display: none;
+}
+
+.menu-toggle .menu-icon {
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: block;
+    margin: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle input:checked ~ .menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+}
