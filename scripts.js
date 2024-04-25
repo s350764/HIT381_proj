@@ -8,3 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+  
+  // Redirect to the desired page
+  window.location.href = "home.html"; // Replace "dashboard.php" with your desired URL
+});
+
